@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.main-box {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    margin: 40px auto;
+    border-radius: 15px;
+    
+}
+.img-prod {
+    max-width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.inner-box h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    padding: 20px 0 0 30px;
+}
+.inner-box h2 {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    padding: 0 0 0 25px;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+}
+.inner-box p {
+    font-family: 'Montserrat',sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+    padding: 0 0 0 30px;
+    font-weight: 500;
+}
+.amount {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 35px;
+    padding: 0 0 0 30px;
+    display: flex;
+    justify-content: left;
+}
+.amount-canc {
+    font-size: 14px;
+    padding: 13px 5px 0 20px;
+    font-family: 'Montserrat';
+    color:  hsl(228, 12%, 48%);
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.button1 {
+    width: 90%;
+    margin: 20px auto 25px auto;
+    padding: 15px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat';
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    background-image: url('../images/icon-cart.svg');
+    background-repeat: no-repeat;
+    background-position: 75px 15px;
+    transition: all 0.3s;
+}
+
+.button1:hover {
+    background-color: hsl(158, 36%, 20%);
+}
+.img-desktop {
+    display: none;
+}
+@media screen and (min-width:1000px) {
+    .img-prod {
+        display: none;
+    }
+    .img-desktop {
+        max-width: 50%;
+        float: left;
+        height: 100%;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        border-radius: 15px 0 0 15px;
+        object-fit: cover;
+    }
+    .main-box {
+        min-height: 50vh;
+        width: 600px;
+        margin: 200px auto;
+    }
+    .inner-box {
+        float: left;
+    }
+
+    .left {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .button1 {
+        padding: 15px;
+        background-position: 70px 15px;
+        font-size: 12px;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
